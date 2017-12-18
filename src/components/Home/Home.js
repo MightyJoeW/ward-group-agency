@@ -1,20 +1,23 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import axios from 'axios';
-import './App.css';
+import React, { Component } from "react";
+import logo from "../../logo.svg";
+import axios from "axios";
+import "./Home.css";
 
-class App extends Component {
+class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      test:[]
+      test: []
     };
   }
 
-  componentDidMount(){
-        axios.get(`http://localhost:3000/api/recap/austin`)
-            .then(response => {this.setState({ test: response.data });})
-            .catch(console.log);
+  componentDidMount() {
+    axios
+      .get(`http://localhost:3000/api/recap/austin`)
+      .then(response => {
+        this.setState({ test: response.data });
+      })
+      .catch(console.log);
   }
 
   render() {
@@ -32,4 +35,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;

@@ -1,5 +1,4 @@
 const express = require("express"),
-  session = require("express-session"),
   { json } = require("body-parser"),
   cors = require("cors"),
   axios = require('axios');
