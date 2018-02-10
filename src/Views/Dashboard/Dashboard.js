@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./Dashboard.css";
 
+import Header from "../../components/Header/Header";
+import Content from "../../components/Content/Content";
+import Footer from "../../components/Footer/Footer";
+
 class Dashboard extends Component {
   constructor(props) {
     super(props);
@@ -21,8 +25,10 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1> Dashboard </h1>
+      <div className="dashboard-wrapper">
+        <Header />
+        <Content />
+        <Footer />
       </div>
     );
   }

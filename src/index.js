@@ -2,17 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-
 import "./index.css";
 import App from "./components/App/App";
 import registerServiceWorker from "./registerServiceWorker";
 
 ReactDOM.render(
   <BrowserRouter>
-    <MuiThemeProvider>
-      <App />
-    </MuiThemeProvider>
+    <App />
   </BrowserRouter>,
   document.getElementById("root")
 );

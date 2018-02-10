@@ -1,0 +1,6 @@
+.sidebar-wrapper {
+  background: var(--off-black);
+  color: #fff;
+  padding: 2em 0;
+  text-align: center;
+}
