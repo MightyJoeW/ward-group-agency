@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 
 import Dashboard from "./Views/Dashboard/Dashboard";
 
+
 export default (
   <Switch>
     <Route exact path="/" component={Dashboard} />
